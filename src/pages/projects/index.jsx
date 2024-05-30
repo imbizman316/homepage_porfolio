@@ -6,10 +6,11 @@ const portfolio = [
     id: 0,
     title: "FlixPatrol Clone",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam eligendi non culpa enim soluta rerum debitis nulla, praesentium laborum consequatur aliquam voluptate provident. Quo eius velit laboriosam facilis atque.",
-    image: "https://www.caribonix.com/wp-content/uploads/car-website1.png",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/1*fGz9RM5dBbdBYQCBMDPr2Q.jpeg",
     languages: ["React", "Tailwind"],
-    github: "https://github.com/imbizman316/homepage",
-    demo: "https://0402-shopping-cart.vercel.app/cart",
+    github: "https://github.com/imbizman316/flixpatrol_clone",
+    demo: "https://flixpatrol-clone.vercel.app/",
   },
   {
     id: 1,
