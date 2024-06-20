@@ -14,23 +14,22 @@ const portfolio = [
   },
   {
     id: 1,
-    title: "COINDOM",
+    title: "Ticketing App",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae beatae tempore maxime a, reprehenderit, repellendus illo laborum eum cumque tenetur nostrum. Cumque debitis quidem est? Illo sit provident perferendis.",
-    image:
-      "https://www.blockchain.com/static/img/home/products/ex-landing-margin-image.png",
-    languages: ["React", "Tailwind"],
-    github: "https://github.com/imbizman316/homepage",
-    demo: "https://0402-shopping-cart.vercel.app/cart",
+    image: "https://i.imgur.com/7ZMmJd5.png",
+    languages: ["Next.js", "Tailwind"],
+    github: "https://github.com/imbizman316/ticket_app_nextjs",
+    demo: "https://ticket-app-nextjs-seven.vercel.app/",
   },
-  {
-    id: 2,
-    title: "SEX GYM",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam distinctio libero nemo ipsa exercitationem perspiciatis architecto rem, facere maiores deleniti repudiandae dicta odit? Blanditiis possimus natus eius expedita aspernatur?",
-    image: "https://themewagon.com/wp-content/uploads/2020/10/gym-1.jpg",
-    languages: ["React", "Tailwind"],
-    github: "https://github.com/imbizman316/homepage",
-    demo: "https://0402-shopping-cart.vercel.app/cart",
-  },
+  // {
+  //   id: 2,
+  //   title: "SEX GYM",
+  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam distinctio libero nemo ipsa exercitationem perspiciatis architecto rem, facere maiores deleniti repudiandae dicta odit? Blanditiis possimus natus eius expedita aspernatur?",
+  //   image: "https://themewagon.com/wp-content/uploads/2020/10/gym-1.jpg",
+  //   languages: ["React", "Tailwind"],
+  //   github: "https://github.com/imbizman316/homepage",
+  //   demo: "https://0402-shopping-cart.vercel.app/cart",
+  // },
 ];
 
 function Projects() {
