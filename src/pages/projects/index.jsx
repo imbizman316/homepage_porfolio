@@ -4,7 +4,7 @@ import ProjectItem from "./components/ProjectItem";
 const portfolio = [
   {
     id: 0,
-    title: "FlixPatrol Clone",
+    title: "K-pop Group Page Mock-up",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam eligendi non culpa enim soluta rerum debitis nulla, praesentium laborum consequatur aliquam voluptate provident. Quo eius velit laboriosam facilis atque.",
     image: "https://i.imgur.com/ECYvhiZ.png",
     languages: ["NextJS", "Tailwind"],
@@ -29,6 +29,15 @@ const portfolio = [
     languages: ["Next.js", "Tailwind"],
     github: "https://github.com/imbizman316/ticket_app_nextjs",
     demo: "https://ticket-app-nextjs-seven.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Blog App",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae beatae tempore maxime a, reprehenderit, repellendus illo laborum eum cumque tenetur nostrum. Cumque debitis quidem est? Illo sit provident perferendis.",
+    image: "https://i.imgur.com/7ZMmJd5.png",
+    languages: ["Next.js", "Tailwind"],
+    github: "https://github.com/imbizman316/jhkim",
+    demo: "https://jhkim-pink.vercel.app/",
   },
   // {
   //   id: 2,
