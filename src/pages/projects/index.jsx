@@ -52,8 +52,8 @@ const portfolio = [
 
 function Projects() {
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-[600px] flex flex-col gap-5 mb-10">
+    <div className="flex flex-col items-center w-full">
+      <div className="w-[300px] flex flex-col gap-5 mb-10">
         <h1 className="text-blue-900 font-bold">PORTFOLIO</h1>
         <h1 className="font-bold">
           Each project is a unique piece of development
