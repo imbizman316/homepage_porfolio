@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import myImage from "../../assets/images/User_Photo_leeh7_1.jpg";
 import { FaReact, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -6,8 +6,16 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import About from "../about";
 import Contact from "../contact";
 import Projects from "../projects";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage("kr");
+  }, []);
+
   return (
     <div className="min-h-screen bg-white flex flex-col gap-40 justify-start items-start">
       <div className=" bg-white flex flex-col items-full pt-10 items-center justify-center w-[100%]">
@@ -16,10 +24,7 @@ function Home() {
             <h1 className="font-bold text-2xl text-center">
               Front-End React / NextJS Developer
             </h1>
-            <h1 className="text-gray-700 px-5">
-              Hi, I'm MIke Lee. A hard-working Front-end React/NextJS Developer
-              based in Seoul, South Korea.
-            </h1>
+            <h1 className="text-gray-700 px-5">{t("home_intro")}</h1>
           </div>
           <div>
             <img
