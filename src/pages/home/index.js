@@ -18,13 +18,16 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col gap-40 justify-start items-start">
-      <div className=" bg-white flex flex-col items-full pt-10 items-center justify-center w-[100%]">
-        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] justify-between items-center">
+      <div className=" bg-white flex flex-col items-full pt-10 items-center justify-center w-auto">
+        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-auto">
+          {/* w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px]  */}
           <div className="flex flex-col gap-5">
             <h1 className="font-bold text-2xl text-center">
               Front-End React / NextJS Developer
             </h1>
-            <h1 className="text-gray-700 px-5">{t("home_intro")}</h1>
+            <h1 className="text-gray-700 px-10  w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
+              {t("home_intro")}
+            </h1>
           </div>
           <div>
             <img
@@ -34,7 +37,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center mt-10 w-screen">
+        <div className="flex flex-row justify-center mt-10 w-screen px-10">
           <div className="flex justify-center items-center mr-10 font-semibold text-sm sm:text-sm md:text-base lg:text-base">
             Tech Stack:
           </div>
