@@ -13,7 +13,7 @@ function Home() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    i18n.changeLanguage("kr");
+    i18n.changeLanguage(navigator.language);
   }, []);
 
   return (
