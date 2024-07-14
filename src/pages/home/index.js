@@ -9,12 +9,14 @@ import Projects from "../projects";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-white flex flex-col gap-40">
-      <div className=" bg-white flex flex-col items-center pt-10">
-        <div className="flex flex-row w-[600px] justify-between">
-          <div className="flex flex-col gap-5 w-[350px]">
-            <h1 className="font-bold text-2xl">Front-End React Developer</h1>
-            <h1 className="text-gray-700">
+    <div className="min-h-screen bg-white flex flex-col gap-40 justify-start items-start border-2 border-black">
+      <div className=" bg-white flex flex-col items-full pt-10 items-center justify-center w-[100%]">
+        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row w-[400px] justify-between items-center">
+          <div className="flex flex-col gap-5">
+            <h1 className="font-bold text-2xl text-center">
+              Front-End React Developer
+            </h1>
+            <h1 className="text-gray-700 px-5">
               Hi, I'm MIke Lee. A hard-working Front-end React Developer based
               in Seoul, South Korea.
             </h1>
@@ -27,7 +29,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-start w-[600px] mt-10">
+        <div className="flex flex-row justify-start mt-10">
           <div className="flex justify-center items-center mr-10 font-semibold">
             Tech Stack |
           </div>

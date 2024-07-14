@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 function ProjectItem({ item }) {
   return (
     <div className="flex flex-row justify-center items-center gap-10 w-[600px]">
-      <img
-        className="h-[250px] w-[300px] object-cover border-2"
-        src={item.image}
-        alt={item.title}
-      />
+      <a href={item.demo} className="w-full">
+        <img
+          className="h-[250px] w-[300px] object-cover border-2 cursor-pointer"
+          src={item.image}
+          alt={item.title}
+        />
+      </a>
       <div className="flex flex-col gap-3">
         <h1 className="font-bold">{item.title}</h1>
         <h1 className="text-sm">{item.desc}</h1>

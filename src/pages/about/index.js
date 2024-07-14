@@ -4,9 +4,9 @@ import photo2 from "../../assets/images/photo2.jpg";
 
 function About() {
   return (
-    <div className="bg-white flex flex-col items-center pt-10">
+    <div className="bg-white flex flex-col items-center pt-10 w-full">
       <div className="flex flex-row gap-10">
-        <div className="border-2 border-black w-[400px] flex justify-center pt-20 pr-14">
+        <div className="border-2 border-black flex justify-center pt-20 pr-14">
           <div>
             <img className="flex rotate-3" src={photo1} alt="china" />
             <img

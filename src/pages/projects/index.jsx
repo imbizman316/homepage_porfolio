@@ -7,35 +7,35 @@ const portfolio = [
     title: "K-pop Group Page Mock-up",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam eligendi non culpa enim soluta rerum debitis nulla, praesentium laborum consequatur aliquam voluptate provident. Quo eius velit laboriosam facilis atque.",
     image: "https://i.imgur.com/ECYvhiZ.png",
-    languages: ["NextJS", "Tailwind"],
+    languages: ["NextJS", "Tailwind", "MongoDB"],
     github: "https://github.com/imbizman316/gorgeous_nextjs",
     demo: "https://gorgeous-nextjs.vercel.app/",
   },
-  {
-    id: 1,
-    title: "FlixPatrol Clone",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam eligendi non culpa enim soluta rerum debitis nulla, praesentium laborum consequatur aliquam voluptate provident. Quo eius velit laboriosam facilis atque.",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1400/1*fGz9RM5dBbdBYQCBMDPr2Q.jpeg",
-    languages: ["React", "Tailwind"],
-    github: "https://github.com/imbizman316/flixpatrol_clone",
-    demo: "https://flixpatrol-clone.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Ticketing App",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae beatae tempore maxime a, reprehenderit, repellendus illo laborum eum cumque tenetur nostrum. Cumque debitis quidem est? Illo sit provident perferendis.",
-    image: "https://i.imgur.com/7ZMmJd5.png",
-    languages: ["Next.js", "Tailwind"],
-    github: "https://github.com/imbizman316/ticket_app_nextjs",
-    demo: "https://ticket-app-nextjs-seven.vercel.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "FlixPatrol Clone",
+  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam eligendi non culpa enim soluta rerum debitis nulla, praesentium laborum consequatur aliquam voluptate provident. Quo eius velit laboriosam facilis atque.",
+  //   image:
+  //     "https://miro.medium.com/v2/resize:fit:1400/1*fGz9RM5dBbdBYQCBMDPr2Q.jpeg",
+  //   languages: ["React", "Tailwind"],
+  //   github: "https://github.com/imbizman316/flixpatrol_clone",
+  //   demo: "https://flixpatrol-clone.vercel.app/",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Ticketing App",
+  //   desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae beatae tempore maxime a, reprehenderit, repellendus illo laborum eum cumque tenetur nostrum. Cumque debitis quidem est? Illo sit provident perferendis.",
+  //   image: "https://i.imgur.com/7ZMmJd5.png",
+  //   languages: ["Next.js", "Tailwind"],
+  //   github: "https://github.com/imbizman316/ticket_app_nextjs",
+  //   demo: "https://ticket-app-nextjs-seven.vercel.app/",
+  // },
   {
     id: 3,
     title: "Blog App",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repudiandae beatae tempore maxime a, reprehenderit, repellendus illo laborum eum cumque tenetur nostrum. Cumque debitis quidem est? Illo sit provident perferendis.",
-    image: "https://i.imgur.com/7ZMmJd5.png",
-    languages: ["Next.js", "Tailwind"],
+    image: "https://i.imgur.com/urhEZjW.png",
+    languages: ["Next.js", "Tailwind", "MongoDB"],
     github: "https://github.com/imbizman316/jhkim",
     demo: "https://jhkim-pink.vercel.app/",
   },
@@ -61,7 +61,7 @@ function Projects() {
       </div>
       <div className="flex flex-col gap-12">
         {portfolio.map((item) => (
-          <ProjectItem item={item} />
+          <ProjectItem item={item} key={item.id} />
         ))}
       </div>
     </div>
