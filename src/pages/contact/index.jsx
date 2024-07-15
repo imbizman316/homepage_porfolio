@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 function Contact() {
   return (
-    <div className="bg-white flex flex-col items-center pt-10 w-full">
+    <div className="bg-white flex flex-col items-center pt-10 w-auto mb-10">
       <div className="border-2 p-5">
         <h1 className="mb-5 font-semibold text-gray-500">
           Please feel free to contact me at any time!

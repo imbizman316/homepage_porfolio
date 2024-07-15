@@ -18,36 +18,36 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col gap-20 justify-start items-start">
-      <div className=" bg-white flex flex-col pt-10 items-center justify-center">
+    <div className="min-h-screen bg-white flex flex-col gap-20 justify-center items-center">
+      <div className="flex flex-col pt-10 items-center justify-center">
         <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center">
           {/* w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px]  */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 justify-center items-center">
             <h1 className="font-bold text-2xl text-center">
               Front-End React / NextJS Developer
             </h1>
-            <h1 className="text-gray-700 px-10  w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
+            <h1 className="text-gray-700 w-[300px] sm:w-[300px] md:w-[500px] lg:w-[600px]">
               {t("home_intro")}
             </h1>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <img
-              className="ml-5 mt-5 max-w-[200px] border-4 border-black rounded-md"
+              className="mt-5 w-[220px] border-2 border-black rounded-md"
               src={myImage}
               alt="mikelee"
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center mt-10 w-screen px-5">
+        <div className="flex flex-row justify-center mt-10 gap-3">
           <div className="flex justify-center items-center font-semibold text-sm sm:text-sm md:text-base lg:text-base">
             Tech Stack:
           </div>
           <div className="flex flex-row justify-center items-center gap-4">
-            <FaReact size={40} className="text-blue-400" />
-            <RiNextjsFill size={40} className="text-black" />
-            <IoLogoJavascript size={40} className="text-yellow-500 bg-black" />
-            <FaHtml5 size={40} className="text-red-600" />
-            <RiTailwindCssFill size={40} className="text-sky-500" />
+            <FaReact size={30} className="text-blue-400" />
+            <RiNextjsFill size={30} className="text-black" />
+            <IoLogoJavascript size={30} className="text-yellow-500 bg-black" />
+            <FaHtml5 size={30} className="text-red-600" />
+            <RiTailwindCssFill size={30} className="text-sky-500" />
           </div>
         </div>
       </div>
