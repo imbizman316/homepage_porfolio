@@ -8,6 +8,7 @@ import Contact from "../contact";
 import Projects from "../projects";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
+import { RiNextjsFill } from "react-icons/ri";
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -17,9 +18,9 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col gap-40 justify-start items-start">
-      <div className=" bg-white flex flex-col items-full pt-10 items-center justify-center w-auto">
-        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-auto">
+    <div className="min-h-screen bg-white flex flex-col gap-20 justify-start items-start">
+      <div className=" bg-white flex flex-col pt-10 items-center justify-center">
+        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center">
           {/* w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px]  */}
           <div className="flex flex-col gap-5">
             <h1 className="font-bold text-2xl text-center">
@@ -37,12 +38,13 @@ function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center mt-10 w-screen px-10">
-          <div className="flex justify-center items-center mr-10 font-semibold text-sm sm:text-sm md:text-base lg:text-base">
+        <div className="flex flex-row justify-center mt-10 w-screen px-5">
+          <div className="flex justify-center items-center font-semibold text-sm sm:text-sm md:text-base lg:text-base">
             Tech Stack:
           </div>
-          <div className="flex flex-row justify-center items-center gap-8">
+          <div className="flex flex-row justify-center items-center gap-4">
             <FaReact size={40} className="text-blue-400" />
+            <RiNextjsFill size={40} className="text-black" />
             <IoLogoJavascript size={40} className="text-yellow-500 bg-black" />
             <FaHtml5 size={40} className="text-red-600" />
             <RiTailwindCssFill size={40} className="text-sky-500" />
