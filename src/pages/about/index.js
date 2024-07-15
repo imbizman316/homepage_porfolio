@@ -3,13 +3,15 @@ import photo1 from "../../assets/images/photo1.jpg";
 import photo2 from "../../assets/images/photo2.jpg";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
+import { useAppContext } from "../../components/context";
 
 function About() {
   const { t, i18n } = useTranslation();
+  const { language } = useAppContext();
 
   useEffect(() => {
-    i18n.changeLanguage(navigator.language);
-  }, []);
+    i18n.changeLanguage(language);
+  }, [i18n, language]);
 
   return (
     <div className="bg-white flex flex-col items-center pt-10 w-full">

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useAppContext } from "./context";
+import LanguageBar from "./LanguageBar";
 
 function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const { showMenu, setShowMenu, language } = useAppContext();
 
   return (
     <div className="flex flex-row justify-between w-[100%] p-5 bg-white items-center h-20">
@@ -11,10 +13,31 @@ function Navbar() {
         Mike.dev
       </Link>
       <div className="hidden sm:hidden md:flex lg:flex flex-row gap-4 text-sm font-semibold">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link
+          className="hover:font-extrabold hover:text-blue-950 hover:underline"
+          to="/"
+        >
+          Home
+        </Link>
+        <Link
+          className="hover:font-extrabold hover:text-blue-950 hover:underline"
+          to="/about"
+        >
+          About
+        </Link>
+        <Link
+          className="hover:font-extrabold hover:text-blue-950 hover:underline"
+          to="/projects"
+        >
+          Projects
+        </Link>
+        <Link
+          className="hover:font-extrabold hover:text-blue-950 hover:underline"
+          to="/contact"
+        >
+          Contact
+        </Link>
+        <LanguageBar />
       </div>
       <RxHamburgerMenu
         className={`sm:block md:hidden lg:hidden text-black text-3xl cursor-pointer ${
@@ -26,12 +49,38 @@ function Navbar() {
         <div
           className={`sm:block md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col ${
             showMenu ? "right-0" : "right-[-300px]"
-          } duration-300 gap-4 text-sm font-semibold py-5 z-50 border-b-4`}
+          } duration-300 gap-7 text-base py-5 z-50 border-b-4 h-[50%]`}
         >
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+          <nav
+            className="flex flex-col gap-7 justify-center items-center"
+            onClick={() => setShowMenu(false)}
+          >
+            <Link
+              className="hover:font-extrabold hover:text-blue-950 hover:underline"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="hover:font-extrabold hover:text-blue-950 hover:underline"
+              to="/about"
+            >
+              About
+            </Link>
+            <Link
+              className="hover:font-extrabold hover:text-blue-950 hover:underline"
+              to="/projects"
+            >
+              Projects
+            </Link>
+            <Link
+              className="hover:font-extrabold hover:text-blue-950 hover:underline"
+              to="/contact"
+            >
+              Contact
+            </Link>
+          </nav>
+          <LanguageBar />
         </div>
       )}
     </div>
