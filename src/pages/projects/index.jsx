@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectItem from "./components/ProjectItem";
+import { useTranslation } from "react-i18next";
+import { useAppContext } from "../../components/context";
 
 const portfolio = [
   {
@@ -51,13 +53,18 @@ const portfolio = [
 ];
 
 function Projects() {
+  const { t, i18n } = useTranslation();
+  const { language } = useAppContext();
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [i18n, language]);
+
   return (
     <div className="flex flex-col items-center w-full">
       <div className="w-[300px] flex flex-col gap-5 mb-10">
         <h1 className="text-blue-900 font-bold">PORTFOLIO</h1>
-        <h1 className="font-bold">
-          Each project is a unique piece of development
-        </h1>
+        <h1 className="font-bold">{t("portfolio_title")}</h1>
       </div>
       <div className="flex flex-col gap-12">
         {portfolio.map((item) => (

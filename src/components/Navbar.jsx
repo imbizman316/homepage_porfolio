@@ -45,14 +45,21 @@ function Navbar() {
         } duration-300 relative`}
         onClick={() => setShowMenu(!showMenu)}
       />
-      {showMenu && (
+      {
         <div
-          className={`sm:block md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col ${
-            showMenu ? "right-0" : "right-[-300px]"
-          } duration-300 gap-7 text-base py-5 z-50 border-b-4 h-[50%]`}
+          className={`overflow-hidden sm:hidden md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col ${
+            showMenu
+              ? "right-0 overflow-hidden"
+              : "right-[-600px] w-0 overflow-hidden"
+          } h-[50%] duration-300 gap-7 text-base py-5 z-50 border-b-4"
+          }`}
         >
           <nav
-            className="flex flex-col gap-7 justify-center items-center"
+            className={`flex flex-col gap-7 justify-center items-center ${
+              showMenu
+                ? ""
+                : "hidden w-0 h-0 overflow-hidden border-2 border-black"
+            }`}
             onClick={() => setShowMenu(false)}
           >
             <Link
@@ -79,10 +86,10 @@ function Navbar() {
             >
               Contact
             </Link>
+            <LanguageBar />
           </nav>
-          <LanguageBar />
         </div>
-      )}
+      }
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Projects from "../projects";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { RiNextjsFill } from "react-icons/ri";
+import ColorfulButton from "../../components/ColorfulButton";
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -53,6 +54,7 @@ function Home() {
       </div>
       <About />
       <Projects />
+      <ColorfulButton />
       <Contact />
     </div>
   );
