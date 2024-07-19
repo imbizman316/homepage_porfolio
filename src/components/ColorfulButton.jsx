@@ -21,8 +21,8 @@ function ColorfulButton() {
       </div>
 
       <div
-        className={`h-0 ${
-          sketchBook ? "h-0 overflow-hidden" : "h-full"
+        className={`${
+          sketchBook ? "h-full" : "h-0 overflow-hidden"
         } duration-300 flex flex-col gap-5 justify-center items-center`}
       >
         <div className="flex justify-start items-start w-[35%]">
