@@ -49,8 +49,8 @@ function Navbar() {
         <div
           className={`overflow-hidden sm:hidden md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col ${
             showMenu
-              ? "right-0 overflow-hidden"
-              : "right-[-600px] w-0 overflow-hidden"
+              ? "right-0 overflow-hidden scale-x-100"
+              : "right-[-600px] w-0 overflow-hidden scale-x-0"
           } h-[50%] duration-300 gap-7 text-base py-5 z-50 border-b-4"
           }`}
         >
@@ -58,7 +58,7 @@ function Navbar() {
             className={`flex flex-col gap-7 justify-center items-center ${
               showMenu
                 ? ""
-                : "hidden w-0 h-0 overflow-hidden border-2 border-black"
+                : "hidden w-0 h-0 overflow-hidden border-2 border-black scale-x-0"
             }`}
             onClick={() => setShowMenu(false)}
           >
