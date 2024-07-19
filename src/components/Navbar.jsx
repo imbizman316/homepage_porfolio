@@ -86,8 +86,8 @@ function Navbar() {
             >
               Contact
             </Link>
-            <LanguageBar />
           </nav>
+          <LanguageBar />
         </div>
       }
     </div>
