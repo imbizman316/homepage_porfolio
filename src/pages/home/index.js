@@ -10,6 +10,21 @@ import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { RiNextjsFill } from "react-icons/ri";
 import ColorfulButton from "../../components/ColorfulButton";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -52,7 +67,16 @@ function Home() {
           </div>
         </div>
       </div>
-      <About />
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+      >
+        <About />
+      </motion.div>
       <Projects />
       <ColorfulButton />
       <Contact />
