@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ProjectItem from "./components/ProjectItem";
 import { useTranslation } from "react-i18next";
 import { useAppContext } from "../../components/context";
+import { motion } from "framer-motion";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -60,6 +61,20 @@ function Projects() {
     // },
   ];
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <div className="flex flex-col items-center w-full">
       <div className="w-[300px] flex flex-col gap-5 mb-10">
@@ -67,8 +82,18 @@ function Projects() {
         <h1 className="font-bold">{t("portfolio_title")}</h1>
       </div>
       <div className="flex flex-col gap-12">
-        {portfolio.map((item) => (
-          <ProjectItem item={item} key={item.id} />
+        {portfolio.map((item, index) => (
+          <motion.div
+            key={index}
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+          >
+            <ProjectItem item={item} key={index} />
+          </motion.div>
         ))}
       </div>
     </div>
