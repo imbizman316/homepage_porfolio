@@ -21,6 +21,9 @@ i18n.use(initReactI18next).init({
         portfolio_project_2: "Blog Page",
         portfolio_project_2_desc:
           "It's a website I made for my friend who is a writer.  He can login using his google account, and write a blog.  Saved blogs are stored in MongoDB, and loads from it.",
+        portfolio_project_3: "Memorize Japanese Kanjis App",
+        portfolio_project_3_desc:
+          "Made with React Native, it's an app where you can memorize Japanese Kanjis of different levels. Memorized kanjis are stored in the local memory via sqlite",
       },
     },
     kr: {
@@ -37,6 +40,9 @@ i18n.use(initReactI18next).init({
         portfolio_project_2: "블로그 페이지",
         portfolio_project_2_desc:
           "작가인 지인을 위해 만든 사이트입니다.  구글 계정으로 로그인하면 글을 올릴 수 있게 했으며, 글들은 MongoDB에 저장된 후, 사이트 방문자들이 볼 수 있게 하였습니다.",
+        portfolio_project_3: "한자 위우기 앱",
+        portfolio_project_3_desc:
+          "React Native 기반의 한자(일본어 한자) 외우는 것을 도와주는 앱입니다. 외운 한자는 sqlite를 통해서 로컬 디바이스 메모리에 저장됩니다.",
       },
     },
   },

@@ -3,6 +3,7 @@ import ProjectItem from "./components/ProjectItem";
 import { useTranslation } from "react-i18next";
 import { useAppContext } from "../../components/context";
 import { motion } from "framer-motion";
+import MovingSquare from "../../components/MovingSquare";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -14,11 +15,30 @@ function Projects() {
 
   const portfolio = [
     {
+      id: 3,
+      title: t("portfolio_project_2"),
+      desc: t("portfolio_project_2_desc"),
+      image: "https://i.imgur.com/urhEZjW.png",
+      languages: ["Next.js", "Tailwind", "MongoDB"],
+      github: "https://github.com/imbizman316/jhkim",
+      demo: "https://jhkim-pink.vercel.app/",
+    },
+    {
+      id: 4,
+      title: t("portfolio_project_3"),
+      desc: t("portfolio_project_3_desc"),
+      image: "https://i.imgur.com/e3gTWoG.jpg",
+      languages: ["React Native", "CSS", "sqlite"],
+      github: "https://github.com/imbizman316/react_native_deploy_test",
+      demo: "https://expo.dev/preview/update?message=Add%20kanji&updateRuntimeVersion=1.0.0&createdAt=2024-08-13T14%3A33%3A41.827Z&slug=exp&projectId=97122be2-0975-4c29-ba9d-b94fcc92d1c5&group=af34a42a-b6ab-4ac8-8cdb-669dcb9f64dd",
+    },
+
+    {
       id: 0,
       title: t("portfolio_project_1"),
       desc: t("portfolio_project_1_desc"),
       image: "https://i.imgur.com/ECYvhiZ.png",
-      languages: ["NextJS", "Tailwind", "MongoDB"],
+      languages: ["Next.js", "Tailwind", "MongoDB"],
       github: "https://github.com/imbizman316/gorgeous_nextjs",
       demo: "https://gorgeous-nextjs.vercel.app/",
     },
@@ -41,15 +61,7 @@ function Projects() {
     //   github: "https://github.com/imbizman316/ticket_app_nextjs",
     //   demo: "https://ticket-app-nextjs-seven.vercel.app/",
     // },
-    {
-      id: 3,
-      title: t("portfolio_project_2"),
-      desc: t("portfolio_project_2_desc"),
-      image: "https://i.imgur.com/urhEZjW.png",
-      languages: ["Next.js", "Tailwind", "MongoDB"],
-      github: "https://github.com/imbizman316/jhkim",
-      demo: "https://jhkim-pink.vercel.app/",
-    },
+
     // {
     //   id: 2,
     //   title: "SEX GYM",
@@ -96,6 +108,7 @@ function Projects() {
           </motion.div>
         ))}
       </div>
+      <MovingSquare />
     </div>
   );
 }

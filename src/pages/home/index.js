@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import myImage from "../../assets/images/User_Photo_leeh7_1.jpg";
 import { FaReact, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";

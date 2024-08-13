@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegCommentDots } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
+import { FaSquareFull } from "react-icons/fa";
 
 function ColorfulButton() {
   const [sketchBook, openSketchBook] = useState(false);
@@ -76,6 +77,33 @@ function ColorfulButton() {
             <FaCircle className="text-white text-3xl" />
             <FaCircle className="text-white text-3xl" />
             <FaCircle className="text-white text-3xl" />
+          </div>
+        </div>
+        <div className="w-full flex justify-center items-center bg-slate-300 h-[20em] gap-6">
+          <FaSquareFull className="text-5xl text-red-700 rounded-sm animate-spinAndRest" />
+          <FaSquareFull className="text-5xl text-yellow-700 rounded-sm animate-spinAndRest" />
+          <FaSquareFull className="text-5xl text-blue-700 rounded-sm animate-spinAndRest" />
+        </div>
+        <div className="w-full bg-slate-200 flex justify-center items-center h-[400px] flex-col gap-10">
+          <div className="bg-slate-900 inline-block rounded-full p-[25px]">
+            <div className="bg-blue-500 inline-block rounded-full p-[25px] items-center justify-center">
+              <div className="bg-red-700 rounded-full inline-block p-[25px] justify-center items-center">
+                <div className="w-14 h-14 bg-yellow-400 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-1 justify-center items-center">
+            <h1 className="font-bold text-3xl after::animate-firstWord">
+              I love
+            </h1>
+
+            <div className="bg-purple-800 px-2 py-2 rounded-md text-white font-bold text-3xl">
+              <p>Scrimba</p>
+              <div className="bg-purple-800 px-2 py-2 rounded-md text-white font-bold text-3xl">
+                <p>Mikey</p>
+                <div className="bg-purple-800 px-2 py-2 rounded-md text-white font-bold text-3xl"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
