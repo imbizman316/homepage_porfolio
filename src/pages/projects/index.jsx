@@ -46,7 +46,7 @@ function Projects() {
       id: 5,
       title: t("portfolio_project_5"),
       desc: t("portfolio_project_5_desc"),
-      image: "https://i.imgur.com/bb60dls.png",
+      image: "https://i.imgur.com/g1YwSfe.png",
       languages: ["React", "CSS"],
       github: "https://github.com/imbizman316/pdf-playground",
       demo: "https://pdf-playground-virid.vercel.app/pdf-converter",
