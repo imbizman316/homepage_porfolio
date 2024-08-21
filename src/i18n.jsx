@@ -24,15 +24,18 @@ i18n.use(initReactI18next).init({
         portfolio_project_3: "Memorize Japanese Kanjis App",
         portfolio_project_3_desc:
           "Made with React Native, it's an app where you can memorize Japanese Kanjis of different levels. Memorized kanjis are stored in the local memory via sqlite",
+        portfolio_project_5: "PDF Converter/Merger/Splitter",
+        portfolio_project_5_desc:
+          "You can convert images or other types of files to PDF, merge multiple PDFs into one, and split a PDF file into multiple pages",
       },
     },
     kr: {
       translation: {
         home_intro:
-          "훌륭한 React/NextJS 개발자를 꿈꾸며 꾸준히 노력하고 있는 이호열입니다.",
+          "훌륭한 플스텍 개발자를 꿈꾸며 꾸준히 노력하고 있습니다.잘 부탁드립니다.",
         about_title: "성실함, 정직함, 꾸준함, 창의력을 가진 노력파",
         about_descr:
-          "게임업계 사업부에서 마케팅/커뮤니티메니저/해외사업 등을 담당했지만 개발의 꿈에 도전해 지금은 Front-end 개발자로서의 길을 걸어가고 있습니다.",
+          "게임업계 사업부에서 마케팅/커뮤니티메니저/해외사업 등을 담당했지만 개발의 꿈에 도전해 지금은 Fullstack 개발자로서의 길을 걸어가고 있습니다.",
         portfolio_title: "지금까지 작업한 프로젝트들입니다.",
         portfolio_project_1: "K-pop 걸그룹 (트리플S) 사이트",
         portfolio_project_1_desc:
@@ -43,6 +46,9 @@ i18n.use(initReactI18next).init({
         portfolio_project_3: "한자 위우기 앱",
         portfolio_project_3_desc:
           "React Native 기반의 한자(일본어 한자) 외우는 것을 도와주는 앱입니다. 외운 한자는 sqlite를 통해서 로컬 디바이스 메모리에 저장됩니다.",
+        portfolio_project_5: "PDF 변환하기/합치기/나누기 가능 사이트",
+        portfolio_project_5_desc:
+          "이미디 등의 파일을 PDF로 변환하거나, 여러 PDF파일을 하나로 합칠 수 있고, 하나의 PDF파일을 여러 페이지로 나눌 수 있게한 사이트입니다",
       },
     },
   },

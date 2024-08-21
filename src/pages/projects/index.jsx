@@ -42,6 +42,15 @@ function Projects() {
       github: "https://github.com/imbizman316/gorgeous_nextjs",
       demo: "https://gorgeous-nextjs.vercel.app/",
     },
+    {
+      id: 5,
+      title: t("portfolio_project_5"),
+      desc: t("portfolio_project_5_desc"),
+      image: "https://i.imgur.com/bb60dls.png",
+      languages: ["React", "CSS"],
+      github: "https://github.com/imbizman316/pdf-playground",
+      demo: "https://pdf-playground-virid.vercel.app/pdf-converter",
+    },
     // {
     //   id: 1,
     //   title: "FlixPatrol Clone",
