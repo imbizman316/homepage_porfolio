@@ -23,15 +23,6 @@ function Projects() {
       github: "https://github.com/imbizman316/jhkim",
       demo: "https://jhkim-pink.vercel.app/",
     },
-    {
-      id: 4,
-      title: t("portfolio_project_3"),
-      desc: t("portfolio_project_3_desc"),
-      image: "https://i.imgur.com/e3gTWoG.jpg",
-      languages: ["React Native", "CSS", "sqlite"],
-      github: "https://github.com/imbizman316/react_native_deploy_test",
-      demo: "https://expo.dev/preview/update?message=Add%20kanji&updateRuntimeVersion=1.0.0&createdAt=2024-08-13T14%3A33%3A41.827Z&slug=exp&projectId=97122be2-0975-4c29-ba9d-b94fcc92d1c5&group=af34a42a-b6ab-4ac8-8cdb-669dcb9f64dd",
-    },
 
     {
       id: 0,
@@ -50,6 +41,15 @@ function Projects() {
       languages: ["React", "CSS"],
       github: "https://github.com/imbizman316/pdf-playground",
       demo: "https://pdf-playground-virid.vercel.app/pdf-converter",
+    },
+    {
+      id: 4,
+      title: t("portfolio_project_3"),
+      desc: t("portfolio_project_3_desc"),
+      image: "https://i.imgur.com/e3gTWoG.jpg",
+      languages: ["React Native", "CSS", "sqlite"],
+      github: "https://github.com/imbizman316/react_native_deploy_test",
+      demo: "https://expo.dev/preview/update?message=Add%20kanji&updateRuntimeVersion=1.0.0&createdAt=2024-08-13T14%3A33%3A41.827Z&slug=exp&projectId=97122be2-0975-4c29-ba9d-b94fcc92d1c5&group=af34a42a-b6ab-4ac8-8cdb-669dcb9f64dd",
     },
     // {
     //   id: 1,
