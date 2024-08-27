@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { RiNextjsFill } from "react-icons/ri";
 import ColorfulButton from "../../components/ColorfulButton";
 import { motion } from "framer-motion";
+import DraggablePointer from "../../components/DraggablePointer";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -79,6 +80,7 @@ function Home() {
       </motion.div>
       <Projects />
       <ColorfulButton />
+      <DraggablePointer />
       <Contact />
     </div>
   );
