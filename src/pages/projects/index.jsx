@@ -97,7 +97,7 @@ function Projects() {
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full pb-[100px]">
       <div className="w-[300px] flex flex-col gap-5 mb-10">
         <h1 className="text-blue-900 font-bold">PORTFOLIO</h1>
         <h1 className="font-bold">{t("portfolio_title")}</h1>
