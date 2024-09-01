@@ -80,6 +80,10 @@ function Home() {
       </motion.div>
       <Projects />
       <ColorfulButton />
+      <div>
+        <h1 className="text-blue-900 font-bold">CAREER</h1>
+        <p>Here are the companies and projects I've worked for</p>
+      </div>
       <DraggablePointer />
       <Contact />
     </div>

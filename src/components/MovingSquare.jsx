@@ -77,7 +77,7 @@ function MovingSquare() {
   return (
     <div
       id="movable"
-      className="h-10 w-10 bg-black absolute"
+      className="h-20 w-20 border-2 border-black absolute"
       style={{ top: `${top}px`, left: `${left}px` }}
     />
   );

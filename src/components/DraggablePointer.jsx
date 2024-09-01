@@ -102,11 +102,10 @@ function DraggablePointer() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-[500px] relative bg-gray-100 flex items-center overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300 flex-col"
+      className="w-full h-[500px] relative bg-gray-100 flex items-center justify-center overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300 flex-col"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h1 className="absolute top-10 left-10">Career</h1>
       <motion.div
         className={`bg-yellow-600 h-[100px] w-[100px] absolute cursor-none rounded-full flex items-center justify-center duration-200 ${
           mousePressed && "h-[80px] w-[80px]"
