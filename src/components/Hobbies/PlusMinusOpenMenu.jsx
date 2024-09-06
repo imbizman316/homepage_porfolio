@@ -62,8 +62,10 @@ function PlusMinusOpenMenu() {
               </div>
 
               <p
-                className={`pl-5 border-l-gray-300 border-l-2 ml-2 my-3 text-sm ${
-                  current === menu.id ? "h-[50px] opacity-100" : "h-0 opacity-0"
+                className={`pl-5 border-l-gray-300 border-l-2 ml-2 my-3 text-sm flex items-center ${
+                  current === menu.id
+                    ? "h-[100px] opacity-100"
+                    : "h-0 opacity-0"
                 } overflow-hidden duration-500`}
                 style={{}}
               >
