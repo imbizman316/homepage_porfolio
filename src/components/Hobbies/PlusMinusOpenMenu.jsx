@@ -31,7 +31,7 @@ const subMenus = [
 
 function PlusMinusOpenMenu() {
   const [current, setCurrent] = useState(1);
-  const [showPhoto, setShowPhoto] = useState(false);
+  const [showPhoto, setShowPhoto] = useState(true);
 
   const handleClick = (id) => {
     setCurrent(id);
@@ -81,7 +81,7 @@ function PlusMinusOpenMenu() {
             )[0].image
           }
           alt="seoul"
-          className={`min-w-[300px] pl-0 sm:pl-0 md:pl-0 lg:pl-10 xl:pl-10 duration-500 ${
+          className={`min-w-[300px] pl-0 sm:pl-0 md:pl-0 lg:pl-10 xl:pl-10 duration-500 rounded-md ${
             showPhoto ? "opacity-100" : "opacity-0"
           }`}
         />
