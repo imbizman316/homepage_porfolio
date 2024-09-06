@@ -12,6 +12,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import ColorfulButton from "../../components/ColorfulButton";
 import { motion } from "framer-motion";
 import DraggablePointer from "../../components/DraggablePointer";
+import Hobbies from "../hobbies";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -80,11 +81,12 @@ function Home() {
       </motion.div>
       <Projects />
       <ColorfulButton />
-      <div>
+      {/* <div>
         <h1 className="text-blue-900 font-bold">CAREER</h1>
         <p>Here are the companies and projects I've worked for</p>
       </div>
-      <DraggablePointer />
+      <DraggablePointer /> */}
+      <Hobbies />
       <Contact />
     </div>
   );

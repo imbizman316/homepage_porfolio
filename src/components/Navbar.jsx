@@ -37,6 +37,12 @@ function Navbar() {
         >
           Contact
         </Link>
+        <Link
+          className="hover:font-extrabold hover:text-blue-950 hover:underline"
+          to="/hobbies"
+        >
+          Hobbies
+        </Link>
         <LanguageBar />
       </div>
       <RxHamburgerMenu
@@ -47,7 +53,7 @@ function Navbar() {
       />
       {
         <div
-          className={`overflow-hidden sm:hidden md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col ${
+          className={`overflow-hidden sm:hidden md:hidden lg:hidden absolute top-20 bg-white w-full flex justify-center items-center flex-col z-[100] ${
             showMenu
               ? "right-0 overflow-hidden scale-x-100"
               : "right-[-600px] w-0 overflow-hidden scale-x-0"
