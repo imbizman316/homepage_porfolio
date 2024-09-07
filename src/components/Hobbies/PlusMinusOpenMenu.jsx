@@ -29,7 +29,7 @@ const subMenus = [
   },
 ];
 
-function PlusMinusOpenMenu() {
+const PlusMinusOpenMenu = React.forwardRef((_, ref) => {
   const [current, setCurrent] = useState(1);
   const [showPhoto, setShowPhoto] = useState(true);
 
@@ -40,7 +40,10 @@ function PlusMinusOpenMenu() {
   };
 
   return (
-    <div className="p-12 flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row">
+    <div
+      className="p-12 flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row"
+      ref={ref}
+    >
       <div className="flex-[1]">
         <div className="text-5xl font-extrabold font-serif py-5">
           Useful skills at your fingertips, maximized for start-ups.
@@ -90,6 +93,6 @@ function PlusMinusOpenMenu() {
       </div>
     </div>
   );
-}
+});
 
 export default PlusMinusOpenMenu;

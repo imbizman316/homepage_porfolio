@@ -1,6 +1,6 @@
 import Reac, { useEffect, useRef, useState } from "react";
 
-function FirstStickyBar() {
+function FirstStickyBar({ scrollToSection }) {
   const [isSticky, setIsSticky] = useState(false);
   const stickyRef = useRef(null);
   const originalPositionRef = useRef(0); // To store the original position of the sticky element
@@ -36,11 +36,16 @@ function FirstStickyBar() {
 
   return (
     <div
-      className={`border border-b-gray-200 h-[100px] bg-slate-100 ${
+      className={`border border-b-gray-200 h-[60px] bg-gray-200 flex justify-center items-center rounded-lg ${
         isSticky ? "fixed top-0 w-full z-[1000]" : ""
       }`}
       ref={stickyRef}
-    ></div>
+    >
+      <div className="flex gap-10 z-[1000]">
+        <button onClick={() => scrollToSection("skills")}>Skill</button>
+        <button onClick={() => scrollToSection("strengths")}>Strengths</button>
+      </div>
+    </div>
   );
 }
 

@@ -5,12 +5,23 @@ import About from "../about";
 import FirstStickyBar from "../../components/Hobbies/FirstStickyBar";
 import SlidingInterests from "../../components/Hobbies/SlidingInterests";
 import PlusMinusOpenMenu from "../../components/Hobbies/PlusMinusOpenMenu";
+import PressArrowToMove from "../../components/Hobbies/PressArrowToMove";
 
 function Hobbies() {
   const [openSub, setOpenSub] = useState(false);
   const [getData, setGetData] = useState("");
   const [showSlide, setShowSlide] = useState(false);
   const screenRef = useRef(null);
+  const skillsRef = useRef(null);
+  const strengthsRef = useRef(null);
+
+  const scrollToSection = (type) => {
+    if (type === "skills") {
+      skillsRef.current.scrollIntoView({ behavior: "smooth" });
+    } else {
+      strengthsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const handleClick = (value) => {
     if (getData === value) {
@@ -75,10 +86,11 @@ function Hobbies() {
           name="blurPart"
         ></div>
       </div>
-      <FirstStickyBar />
+      <FirstStickyBar scrollToSection={scrollToSection} />
       <About />
       <SlidingInterests />
-      <PlusMinusOpenMenu />
+      <PlusMinusOpenMenu ref={skillsRef} />
+      <PressArrowToMove ref={strengthsRef} />
     </>
   );
 }
