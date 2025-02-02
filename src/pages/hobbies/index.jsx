@@ -87,7 +87,7 @@ function Hobbies() {
         ></div> */}
       </div>
       {/* <FirstStickyBar scrollToSection={scrollToSection} /> */}
-      <About />
+      {/* <About /> */}
       {/* <SlidingInterests /> */}
       <PlusMinusOpenMenu ref={skillsRef} />
       {/* <PressArrowToMove ref={strengthsRef} /> */}
