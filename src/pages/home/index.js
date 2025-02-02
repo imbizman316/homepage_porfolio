@@ -80,7 +80,7 @@ function Home() {
         <About />
       </motion.div>
       <Projects />
-      <ColorfulButton />
+      {/* <ColorfulButton /> */}
       {/* <div>
         <h1 className="text-blue-900 font-bold">CAREER</h1>
         <p>Here are the companies and projects I've worked for</p>

@@ -63,7 +63,7 @@ function Hobbies() {
   return (
     <>
       <div className="h-[80px] bg-gray-800 w-full z-[120] relative flex items-center justify-around flex-col">
-        <div className="z-[120] flex h-[100px] bg-gray-800">
+        {/* <div className="z-[120] flex h-[100px] bg-gray-800">
           {Object.entries(data.hobbies).map(([key, value], index) => {
             return (
               <button
@@ -77,20 +77,20 @@ function Hobbies() {
           })}
         </div>
 
-        {<NavSubBox open={openSub} getData={getData} showSlide={showSlide} />}
-        <div
+        {<NavSubBox open={openSub} getData={getData} showSlide={showSlide} />} */}
+        {/* <div
           className={`h-screen absolute w-full text-black text-4xl top-8 ${
             openSub ? "backdrop-blur-sm" : ""
           } z-20`}
           ref={screenRef}
           name="blurPart"
-        ></div>
+        ></div> */}
       </div>
-      <FirstStickyBar scrollToSection={scrollToSection} />
+      {/* <FirstStickyBar scrollToSection={scrollToSection} /> */}
       <About />
-      <SlidingInterests />
+      {/* <SlidingInterests /> */}
       <PlusMinusOpenMenu ref={skillsRef} />
-      <PressArrowToMove ref={strengthsRef} />
+      {/* <PressArrowToMove ref={strengthsRef} /> */}
     </>
   );
 }
