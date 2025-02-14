@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useAppContext } from "../../components/context";
 import { motion } from "framer-motion";
 import MovingSquare from "../../components/MovingSquare";
+import NewProjectItem from "./components/NewProjectItem";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -102,7 +103,7 @@ function Projects() {
         <h1 className="text-blue-900 font-bold">PORTFOLIO</h1>
         <h1 className="font-bold">{t("portfolio_title")}</h1>
       </div>
-      <div className="flex flex-col gap-12">
+      <div className="flex xs:flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-12 flex-wrap items-center justify-center">
         {portfolio.map((item, index) => (
           <motion.div
             key={index}
@@ -113,7 +114,8 @@ function Projects() {
               once: true,
             }}
           >
-            <ProjectItem item={item} key={index} />
+            {/* <ProjectItem item={item} key={index} /> */}
+            <NewProjectItem item={item} />
           </motion.div>
         ))}
       </div>
