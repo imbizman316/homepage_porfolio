@@ -87,7 +87,7 @@ function Home() {
         <p>Here are the companies and projects I've worked for</p>
       </div>
       <DraggablePointer /> */}
-      <Hobbies />
+      {/* <Hobbies /> */}
       <Contact />
     </div>
   );
