@@ -68,7 +68,7 @@ const NewProjectItem = ({ item }) => {
         }}
         boxShadow="0px 0px"
       >
-        <a href={item.demo} className="">
+        <a href={item.demo} className="" target="blank">
           <img
             src={item.image}
             width={336}

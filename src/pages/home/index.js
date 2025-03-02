@@ -77,9 +77,10 @@ function Home() {
           once: true,
         }}
       >
+        <Projects />
         <About />
       </motion.div>
-      <Projects />
+
       {/* <ColorfulButton /> */}
       {/* <div>
         <h1 className="text-blue-900 font-bold">CAREER</h1>

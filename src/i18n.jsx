@@ -27,6 +27,8 @@ i18n.use(initReactI18next).init({
         portfolio_project_5: "PDF Converter/Merger/Splitter",
         portfolio_project_5_desc:
           "You can convert images or other types of files to PDF, merge multiple PDFs into one, and split a PDF file into multiple pages",
+        portfolio_project_10: "Starbucks Homepage Clone",
+        portfolio_project_10_desc: "It's a clone website.",
       },
     },
     kr: {

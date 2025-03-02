@@ -16,11 +16,20 @@ function Projects() {
 
   const portfolio = [
     {
+      id: 10,
+      title: t("portfolio_project_10"),
+      desc: t("portfolio_project_10_desc"),
+      image: "https://i.imgur.com/ZTMC4iQ.png",
+      languages: ["Next.js", "Tailwind", "MongoDB", "Supabase"],
+      github: "https://github.com/imbizman316/starbucks-mockup",
+      demo: "https://starbucks-mockup-mikey.vercel.app//",
+    },
+    {
       id: 3,
       title: t("portfolio_project_2"),
       desc: t("portfolio_project_2_desc"),
       image: "https://i.imgur.com/urhEZjW.png",
-      languages: ["Next.js", "Tailwind", "MongoDB"],
+      languages: ["Next.js", "Tailwind", "Material UI"],
       github: "https://github.com/imbizman316/jhkim",
       demo: "https://jhkim-pink.vercel.app/",
     },
